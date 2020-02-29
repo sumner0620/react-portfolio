@@ -1,0 +1,29 @@
+body {
+  background: #fff;
+  color: #000;
+  padding: 36px 0;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  h1,
+  h2,
+  h3 {
+    font-family: "Courier Prime", serif;
+  }
+  h1 {
+    font-size: 54px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  li {
+    margin-bottom: 12px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

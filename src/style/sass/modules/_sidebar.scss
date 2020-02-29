@@ -1,0 +1,48 @@
+.main-header {
+  max-width: 15vw !important;
+  padding: 0 42px !important;
+  background-color: black;
+  color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  h1 {
+    color: white;
+    font-size: 11vw;
+    letter-spacing: -0.4vw;
+    span {
+      margin-left: -2vw;
+    }
+  }
+  a {
+    color: white;
+  }
+  #contact {
+    font-size: 1.4vw;
+    margin: 0 0 24px;
+    div {
+      margin-bottom: 12px;
+    }
+  }
+  #skillset {
+    padding: 24px 0;
+    svg {
+      font-size: 2.2vw;
+      margin: 12px 0;
+      width: 25%;
+      transition: 0.3s all ease;
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.3s all ease;
+      }
+    }
+  }
+  nav#social {
+    padding: 24px 0;
+    width: 100%;
+    a {
+      font-size: 3vw;
+    }
+  }
+}
