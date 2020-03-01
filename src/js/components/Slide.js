@@ -9,8 +9,8 @@ export const Slide = props => {
   if (props.tiles) {
     tileMarkup = (
       <aside className="flex row work">
-        {props.tiles
-          .map(tile => (
+        {props.tiles.map(tile => {
+          return (
             <aside className="flex col item_1_2 work-tile">
               <h3>{tile.title}</h3>
               <p>{tile.description}</p>
@@ -18,8 +18,8 @@ export const Slide = props => {
                 <img src={tile.image} />
               </figure>
             </aside>
-          ))
-          .join("")}
+          );
+        })}
       </aside>
     );
   } else {
