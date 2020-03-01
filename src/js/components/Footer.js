@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // import styles
 import "../../style/sass/modules/_footer.scss";
 
-export function Nav(props) {
+export const Nav = () => {
   return (
     <footer className="main-footer flex row afs">
       <div className="container">
@@ -16,4 +16,4 @@ export function Nav(props) {
       </div>
     </footer>
   );
-}
+};

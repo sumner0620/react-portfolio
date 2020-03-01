@@ -4,7 +4,7 @@ import React, { useState } from "react";
 // import styles
 import "../../style/sass/modules/_slide.scss";
 
-export function Slide(props) {
+export const Slide = props => {
   let tileMarkup;
   if (props.tiles) {
     tileMarkup = (
@@ -34,4 +34,4 @@ export function Slide(props) {
       {tileMarkup}
     </section>
   );
-}
+};

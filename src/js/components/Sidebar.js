@@ -4,7 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Skills } from "./Skills.js";
 import "../../style/sass/modules/_sidebar.scss";
 
-export function Sidebar(props) {
+export const Sidebar = props => {
   return (
     <header className="main-header flex col container afs jfs">
       <aside id="title">
@@ -28,7 +28,7 @@ export function Sidebar(props) {
       </nav>
     </header>
   );
-}
+};
 Sidebar.defaultProps = {
   title: "ds.",
   location: "Worcester, MA",
