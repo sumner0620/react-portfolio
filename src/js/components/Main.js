@@ -17,8 +17,12 @@ import "../../style/sass/partials/_mixins.scss";
 import "../../style/sass/partials/_flex.scss";
 
 export const Main = () => {
+  const ref = React.useRef();
+  React.useLayoutEffect(() => {
+    console.dir(ref.current);
+  }, []);
   return (
-    <main>
+    <main ref={ref}>
       <Sidebar />
       <BrowserRouter>
         <Nav />
