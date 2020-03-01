@@ -43,6 +43,9 @@
     width: 100%;
     a {
       font-size: 3vw;
+      &:hover {
+        color: #99ddff;
+      }
     }
   }
 }

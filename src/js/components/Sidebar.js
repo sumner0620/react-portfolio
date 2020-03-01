@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Skills } from "./Skills.js";
 import "../../style/sass/modules/_sidebar.scss";
 
@@ -18,10 +20,10 @@ export function Sidebar(props) {
       </aside>
       <nav className="flex row jfsa" id="social">
         <a href={props.github} target="_blank">
-          <i className="fab fa-github"></i>
+          <FontAwesomeIcon icon={faGithub} />
         </a>
         <a href={props.linkedin} target="_blank">
-          <i className="fab fa-linkedin"></i>
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </nav>
     </header>
