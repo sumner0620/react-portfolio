@@ -1,8 +1,12 @@
 // import dependencies
 import React from "react";
+import { Link } from "react-router-dom";
 
 // import components
 import { Slide } from "../components/Slide";
+
+// import styles
+import "../../style/sass/pages/_home.scss";
 
 export const Home = () => {
   const tileOneContent =
@@ -10,6 +14,9 @@ export const Home = () => {
   return (
     <section>
       <Slide title="about me." content={tileOneContent} />
+      <Link className="projects" to="/projects">
+        check out my projects
+      </Link>
     </section>
   );
 };
