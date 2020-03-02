@@ -18,9 +18,9 @@ import "../../style/sass/partials/_flex.scss";
 
 export const Main = () => {
   const ref = React.useRef();
-  React.useLayoutEffect(() => {
-    console.dir(ref.current);
-  }, []);
+  // React.useLayoutEffect(() => {
+  //   console.dir(ref.current);
+  // }, []);
   return (
     <main ref={ref}>
       <Sidebar />
