@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "the front end of my portfolio website",
   "main": "index.js",
+  "proxy": "http://localhost:3000",
   "repository": "https://github.com/dpsumner1289/react-portfolio",
   "author": "douglas sumner",
   "license": "MIT",

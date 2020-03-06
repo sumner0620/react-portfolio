@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get("/", function(req, res, next) {
-  res.locals.connection.query("SELECT * from members", function(
+  res.locals.connection.query("SELECT * from posts", function(
     error,
     results,
     fields
