@@ -62,7 +62,7 @@ export const Sidebar = props => {
 };
 Sidebar.defaultProps = {
   title: "ds.",
-  location: "Worcester, MA",
+  location: "worcester, ma",
   phone: "774-200-4059",
   email: "jdsumner0620@gmail.com",
   github: "https://github.com/dpsumner1289/",
