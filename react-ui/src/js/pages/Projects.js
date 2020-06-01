@@ -3,8 +3,9 @@ import React from "react";
 
 // import components
 import { Slide } from "../components/Slide";
+import { workPath } from "../svgs/titles.js"
 
-export const Projects = () => {
+const Projects = () => {
   const tiles = [
     {
       title: "Opioid Action Center",
@@ -33,5 +34,7 @@ export const Projects = () => {
   ];
   const tileTwoContent =
     "i've worked on both large and small projects, from start to finish. here's a few examples of my projects:";
-  return <Slide title="work." tiles={tiles} content={tileTwoContent} />;
+  return <Slide title={workPath} tiles={tiles} content={tileTwoContent} />;
 };
+
+export default Projects

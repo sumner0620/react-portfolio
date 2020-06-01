@@ -4,11 +4,12 @@ import React from "react";
 // import components
 import { Slide } from "../components/Slide";
 import { Quote } from "../components/Quote";
+import { responsePath } from "../svgs/titles.js"
 
 // import styles
 import "../../style/sass/pages/_testimonials.scss";
 
-export const Testimonials = () => {
+const Testimonials = () => {
   const content = "here's what people think about me:";
   const ianQuote =
     "Doug’s passion for learning and honing his craft is one of his most valuable attributes.  He responds well to feedback and critique, always incorporating it into future work and improving his process.";
@@ -23,7 +24,9 @@ export const Testimonials = () => {
   ];
   return (
     <section>
-      <Slide title="what people say." content={content} testimonials={quotes} />
+      <Slide title={responsePath} content={content} testimonials={quotes} />
     </section>
   );
 };
+
+export default Testimonials

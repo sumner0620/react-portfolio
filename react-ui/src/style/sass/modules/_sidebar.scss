@@ -25,6 +25,16 @@
     div {
       margin-bottom: 12px;
     }
+    #clock {
+      margin-bottom: 0;
+      font-size: 1.2vw;
+      #blinker {
+        position: relative;
+        -webkit-animation: blink 2s steps(1) infinite;
+        animation: blink 2s steps(1) infinite;
+        margin: 0 1px 0 2px;
+      }
+    }
   }
   #skillset {
     padding: 24px 0;

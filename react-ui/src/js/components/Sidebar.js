@@ -1,4 +1,5 @@
-import React from "react";
+// import dependencies
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faJs,
@@ -17,8 +18,16 @@ import {
   faLinkedin,
   faGithub
 } from "@fortawesome/free-brands-svg-icons";
+
+// import components
 import { Skills } from "./Skills.js";
+
+// importn styles
+import "../../style/sass/partials/_animations.scss";
 import "../../style/sass/modules/_sidebar.scss";
+
+// import utils
+import { startTime, ampm } from "../utils/startTime.js";
 
 export const Sidebar = props => {
   const icons = [
@@ -36,13 +45,24 @@ export const Sidebar = props => {
     faGrunt,
     faAdobe
   ];
+  useEffect(() => {
+    // startTime();
+    // ampm();
+  });
   return (
     <header className="main-header flex col container afs jfs">
       <aside id="title">
         <h1>{props.title}</h1>
       </aside>
       <aside className="flex col" id="contact">
-        <div>{props.location}</div>
+        <div className="flex row afe jfsb">
+          {props.location}
+          {/* <div id="clock">
+            <span id="hour"></span>
+            <span id="blinker">:</span>
+            <span id="minute"></span>
+          </div> */}
+        </div>
         <div>{props.phone}</div>
         <div>{props.email}</div>
       </aside>
